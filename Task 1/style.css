@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.shape{
+    position: relative;
+}
+
+
+/* hero section */
+.hero__section{
+    display: flex;
+    flex-direction: column;
+    padding-left: clamp(5vw, 8vw, 10vw);
+    justify-content: center;
+    height: 100vh;
+    background: url(./assets/hero_image.png) no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.hero__section h1{
+    font-size: 4.4rem;
+}
+.hero__section p{
+    font-size: 1.8rem;
+}
+
+.button{
+    margin: 60px 0;
+}
+
+.button a{
+    text-decoration: none;
+    background-color: orange;
+    padding: 0.4rem 1.2rem;
+    color: black;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.button a:hover{
+    text-decoration: underline;
+}
+
+
+/* post hero */
+
+/* main styles */
+
+.main{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+}
+
+.image img{
+    width: 100%;
+}
+
+.image{
+    width: 40%;
+    margin: 2rem;
+}
+
+.contentl,.contentr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    width: 80%;
+}
+
+
+.contentr{
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    color: grey;
+}
+
+.social{
+    margin-top: 3.5rem;
+}
+
+.social i{
+    color: grey;
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+
+
+.shape_tri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape_tri svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+}
+
+.shape_tri .shape-fill {
+    fill: #FFFFFF;
+}
