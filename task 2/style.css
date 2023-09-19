@@ -104,7 +104,14 @@ input{
 }
 
 
+@media screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+    }
 
-/* add task */
-
+    .form{
+        position: relative;
+        width: 100%;
+    }
+}
 
